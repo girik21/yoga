@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    background-image: url("../img/mainvisual_laptop.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  .item-title {
+    display: inline-block;
+    margin-bottom: 70px;
+    padding: 10px;
+    line-height:  65px;
+    clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+  } 
+  .item-title h3{
+    color: white;
+    line-height: 90px;
+    font-size: 180px;
+   margin-top: 22%;
+  }
+  .one {
+    font-size: 40px;
+    margin-top: 20%;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+  }
+  .two {
+   font-size: 25px;
+   margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+   letter-spacing: 5px;
+  }
+
+  .sec-title {
+    width: 100%;
+    height: 27%;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 0;
+   letter-spacing: 12px;
+   background-color: #282828;
+  }
+  
+  .classes {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 0;
+    border: none;
+    top: 75%;
+    right: 7%;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(231, 114, 18), rgb(221, 6, 71));
+  }
+  .classes p{
+    font-size: 20px;  
+    color: white;
+    line-height: 33px;
+    margin-top: 10%;
+  }
+  
+  .classes strong{
+    font-weight: bolder;
+    font-size: 33px;
+     line-height: 20px;  
+} 
+  .classes h4{
+      font-size: 25px;
+      color: #fff;
+      font-weight: lighter;
+  }
+  .art {
+    margin-top: 0%;
+    padding: 10px;
+    filter: brightness(100%);
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/whatwedo_laptop.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .art h2 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    margin-top: 0%;
+  }
+  .art p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 0%;
+    line-height: 35px;
+  }
+.point h2{
+    font-size:30px ;
+    margin-top: 5%;
+    letter-spacing: 10px;
+    text-align: center;
+    letter-spacing: 15px; 
+  }
+  
+  .point p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 10px;
+    color: gray;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 10px;
+  }  
+  #works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    align-items: center;
+    margin-left: 22%;
+    
+    
+  }
+  #works li {
+    width: 31%;
+    margin-bottom: 23px;
+  }
+  
+  
+  #works img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    }
+  
+    .heading {
+      font-size: 15px;
+      text-align: left;
+    align-items: center;
+    }
+  
+    .heading h2{
+      color: gold;
+      position: relative;
+      font-weight: bold;
+      margin-left: 23px;
+    }
+  
+    .heading h1{
+      font-weight: bolder;
+    }
+  
+    .heading h3{
+      font-weight: 300px;
+    }
+  .list {
+      margin-right: 100px;
+  }
+  
+  

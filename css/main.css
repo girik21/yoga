@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 100%;
 }
@@ -22,7 +26,8 @@ body, html {
   }
   
   .bg {
-    background-image: url("../img/mainvisual_laptop.png");
+    background: darkgray;
+    background-image: url("../img/mainvisual_laptop.png"), linear-gradient(rgba(7, 0, 0, 0.932),rgba(0, 0, 0, 0.89)); 
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,6 +57,7 @@ body, html {
   }
   .two {
    font-size: 25px;
+   margin-top: 100px;
    margin-left: 100px;
     font-family: 'Times New Roman', Times, serif;
    color: rgb(255, 255, 255);
@@ -103,6 +109,7 @@ body, html {
   .art {
     margin-bottom: 100px;
     padding: 10px;
+    line-height: 170px;
     filter: brightness(100%);
     min-height: 50vh;
     width: 100%;
@@ -162,7 +169,7 @@ body, html {
   #works img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: lightgrey;
     }
   
@@ -171,6 +178,14 @@ body, html {
       text-align: left;
     align-items: center;
     }
+
+    .icon_one{
+      background-color: white;
+      width: 200px
+        
+    }
+
+   
   
     .heading h2{
       color: gold;
@@ -190,46 +205,209 @@ body, html {
       margin-right: 100px;
   }
   
-  .pricey {
-    background-image: url("../img/limited-time_offer_bg_laptop.png");
-    height: 100;
-    min-height: 100vh;
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: serif;
+    background: linear-gradient(to right, rgb(231, 114, 18), rgb(221, 6, 71));
+  }
+
+  .body ul {
+    margin-right: 900px;
+  }
+
+  .body h2{
+    color: 100px;
+    color:black;
+  }
+  .blog-card {
+    position: absolute;
+    margin-top: 100px;
+    height: 370px;
+    width: 95%;
+    max-width: 850px;
+    margin: auto;
+    background: whitesmoke;
+  }
+
+  .blog-card .inner-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  height: 360px;
+}
+
+  .inner-part img{
+    height: 260px;
+    width: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+   border-radius: 2px; 
+   box-shadow: 2px 3px 15px white;
+  }
+
+  .photo img {
+    height: 100%;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    cursor: pointer; 
+  }
+  .content {
+    padding: 0 20px 0 35px;
+    width: 900px;
+    margin-left: 70px;
+  }
+  .content .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+
+  .content .text {
+    font-size: 19px;
+    color: black;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: lighter;
+  }
+.some {
+  font-size: 30px;
+  color: rebeccapurple;
+  font-family: 'Courier New', Courier, monospace;
+}
+  .head {
+    min-height: 120vh;
+    color: black;
+    background-image: url(../img/limited-time_offer_bg_laptop.png);
     background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 3em;
     text-align: center;
   }
-  .columns {
-    float: left;
-    width: 33%;
-    padding: 0px;
-    margin-top: 30px;
+
+  .head h1 {
+    font-size: 3em;
+    line-height: 90px;
+    letter-spacing: 2px;
+    color: black;
   }
-  .price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-  }
-  
-  .price .header {
-    background-color: red;
-    color: white;
+
+  .somm {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)} 
+  .somm{  
+    width: 40%;
+    margin-left: 350px;
     font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 20px;
+    font-weight: lighter  ;
+ 
   }
-  
-  .price li {
-    border-bottom: 10px solid transparent;
-    padding: 20px;
-    text-align: center;
+
+  .somm h3 {
+    padding: 30px 10px;
   }
+
+.pricing {
+  padding: 1em 0 2em;  
+  margin-top: 30px;
+}
+
+.pricing-grids {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.pricing-grid {
+  flex: 1;
+  width: 20%;
+  margin:0 5px;
+  transition: 0.5s all;
+}
+.pricing-top{
+  padding: 3px;
+  background: goldenrod;
+  text-align: center;
+}
+
+.pricing-top h3{
+  color: white;
+  font-style: 1.5em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.three-pricing-info h3{
+color: white;
+font-size: 29px;
+}
+
+.pricing-bottom {
+  background: white;
+  padding: 2em 0 2em 0em;
   
-  
-  
-  
+
+}
+
+.pricing-bottom-bottom p{
+  color: grey;
+ font-size: 15px;
+ margin: 0 0 1em 0;
+ 
+}
+
+.pricing-bottom p {
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: bolder;
+}
+
+.pricing-bottom h2{
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.pricing-bottom span{
+  font-size: 75px;
+}
+
+.pricing-bottom .smol {
+  color: black;
+  font-size: 30px;
+}
+
+.pricing-bottom .smoller {
+  color: gold;
+  font-size: 20px;
+}
+
+.pricing-bottom img {
+  padding: 0;
+  min-height: 40px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.btn-grad {
+   padding: 30px 120px;
+   background-size: 200% auto;
+   border-radius: 10px; 
+   box-shadow: transparent;
+   font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+   font-size: large;
+   font-weight: bolder;
+   color: white;
+ }
+
+
